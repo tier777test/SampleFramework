@@ -10,6 +10,9 @@
 		8A56CA2A2389CE8600B7AB49 /* SampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A56CA202389CE8500B7AB49 /* SampleFramework.framework */; };
 		8A56CA2F2389CE8600B7AB49 /* SampleFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A56CA2E2389CE8600B7AB49 /* SampleFrameworkTests.swift */; };
 		8A56CA312389CE8600B7AB49 /* SampleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A56CA232389CE8600B7AB49 /* SampleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A56CA3B2389D08600B7AB49 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A56CA3A2389D08600B7AB49 /* Log.swift */; };
+		8A56CA412389D37E00B7AB49 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A56CA402389D37E00B7AB49 /* MessageType.swift */; };
+		8A56CA432389D39400B7AB49 /* LogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A56CA422389D39400B7AB49 /* LogProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		8A56CA292389CE8600B7AB49 /* SampleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A56CA2E2389CE8600B7AB49 /* SampleFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrameworkTests.swift; sourceTree = "<group>"; };
 		8A56CA302389CE8600B7AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A56CA3A2389D08600B7AB49 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		8A56CA402389D37E00B7AB49 /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		8A56CA422389D39400B7AB49 /* LogProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 			children = (
 				8A56CA232389CE8600B7AB49 /* SampleFramework.h */,
 				8A56CA242389CE8600B7AB49 /* Info.plist */,
+				8A56CA3C2389D08A00B7AB49 /* Sources */,
 			);
 			path = SampleFramework;
 			sourceTree = "<group>";
@@ -84,6 +91,40 @@
 				8A56CA302389CE8600B7AB49 /* Info.plist */,
 			);
 			path = SampleFrameworkTests;
+			sourceTree = "<group>";
+		};
+		8A56CA3C2389D08A00B7AB49 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8A56CA3F2389D37500B7AB49 /* Enums */,
+				8A56CA3E2389D09C00B7AB49 /* Protocols */,
+				8A56CA3D2389D09100B7AB49 /* Classes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8A56CA3D2389D09100B7AB49 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8A56CA3A2389D08600B7AB49 /* Log.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8A56CA3E2389D09C00B7AB49 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8A56CA422389D39400B7AB49 /* LogProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8A56CA3F2389D37500B7AB49 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8A56CA402389D37E00B7AB49 /* MessageType.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +189,7 @@
 				TargetAttributes = {
 					8A56CA1F2389CE8500B7AB49 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 					8A56CA282389CE8600B7AB49 = {
 						CreatedOnToolsVersion = 11.2;
@@ -195,6 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A56CA3B2389D08600B7AB49 /* Log.swift in Sources */,
+				8A56CA432389D39400B7AB49 /* LogProtocol.swift in Sources */,
+				8A56CA412389D37E00B7AB49 /* MessageType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,6 +385,7 @@
 		8A56CA352389CE8600B7AB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G5K3X8K9NT;
@@ -356,6 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ng.SampleFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +411,7 @@
 		8A56CA362389CE8600B7AB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G5K3X8K9NT;
@@ -388,6 +436,7 @@
 		8A56CA382389CE8600B7AB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5K3X8K9NT;
 				INFOPLIST_FILE = SampleFrameworkTests/Info.plist;
@@ -406,6 +455,7 @@
 		8A56CA392389CE8600B7AB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5K3X8K9NT;
 				INFOPLIST_FILE = SampleFrameworkTests/Info.plist;
