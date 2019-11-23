@@ -23,7 +23,7 @@ s.homepage = "https://github.com/tier777test/SampleFramework"
 s.source = { :git => "https://github.com/tier777test/SampleFramework.git", :tag => "#{s.version}"}
 
 # 8
-s.source_files = "SampleFramework/**/*.{swift}"
+s.source_files = "SampleFramework/Sources/**/*.{swift}"
 
 # 9
 s.resources = "SampleFramework/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
