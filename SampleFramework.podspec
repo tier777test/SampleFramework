@@ -11,7 +11,6 @@ s.author = "tier777test"
 s.homepage = "https://github.com/tier777test/SampleFramework"
 s.source = { :git => "https://github.com/tier777test/SampleFramework.git", :tag => s.version.to_s }
 s.source_files = "SampleFramework/Sources/**/*"
-s.resources = "SampleFramework/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 s.swift_version = "5"
 
 end
