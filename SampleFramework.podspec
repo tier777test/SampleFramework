@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = 'SampleFramework'
-  s.version = '1.0.0'
+  s.version = '1.2.0'
   s.license = 'MIT'
   s.summary = 'SampleFramework description.'
   s.homepage = 'https://github.com/tier777test/SampleFramework'
