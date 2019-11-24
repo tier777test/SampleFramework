@@ -59,7 +59,7 @@
 		8A56CA162389CE8500B7AB49 = {
 			isa = PBXGroup;
 			children = (
-				8A56CA222389CE8500B7AB49 /* SampleFramework */,
+				8A56CA222389CE8500B7AB49 /* Source */,
 				8A56CA2D2389CE8600B7AB49 /* SampleFrameworkTests */,
 				8A56CA212389CE8500B7AB49 /* Products */,
 			);
@@ -74,14 +74,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8A56CA222389CE8500B7AB49 /* SampleFramework */ = {
+		8A56CA222389CE8500B7AB49 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				8A56CA232389CE8600B7AB49 /* SampleFramework.h */,
 				8A56CA242389CE8600B7AB49 /* Info.plist */,
-				8A56CA3C2389D08A00B7AB49 /* Source */,
+				8A56CA3F2389D37500B7AB49 /* Enums */,
+				8A56CA3E2389D09C00B7AB49 /* Protocols */,
+				8A56CA3D2389D09100B7AB49 /* Classes */,
 			);
-			path = SampleFramework;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		8A56CA2D2389CE8600B7AB49 /* SampleFrameworkTests */ = {
@@ -91,16 +93,6 @@
 				8A56CA302389CE8600B7AB49 /* Info.plist */,
 			);
 			path = SampleFrameworkTests;
-			sourceTree = "<group>";
-		};
-		8A56CA3C2389D08A00B7AB49 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				8A56CA3F2389D37500B7AB49 /* Enums */,
-				8A56CA3E2389D09C00B7AB49 /* Protocols */,
-				8A56CA3D2389D09100B7AB49 /* Classes */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		8A56CA3D2389D09100B7AB49 /* Classes */ = {
@@ -392,7 +384,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SampleFramework/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,7 +411,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SampleFramework/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
