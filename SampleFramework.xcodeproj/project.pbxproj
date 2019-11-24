@@ -79,7 +79,7 @@
 			children = (
 				8A56CA232389CE8600B7AB49 /* SampleFramework.h */,
 				8A56CA242389CE8600B7AB49 /* Info.plist */,
-				8A56CA3C2389D08A00B7AB49 /* Sources */,
+				8A56CA3C2389D08A00B7AB49 /* Source */,
 			);
 			path = SampleFramework;
 			sourceTree = "<group>";
@@ -93,14 +93,14 @@
 			path = SampleFrameworkTests;
 			sourceTree = "<group>";
 		};
-		8A56CA3C2389D08A00B7AB49 /* Sources */ = {
+		8A56CA3C2389D08A00B7AB49 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				8A56CA3F2389D37500B7AB49 /* Enums */,
 				8A56CA3E2389D09C00B7AB49 /* Protocols */,
 				8A56CA3D2389D09100B7AB49 /* Classes */,
 			);
-			path = Sources;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		8A56CA3D2389D09100B7AB49 /* Classes */ = {
