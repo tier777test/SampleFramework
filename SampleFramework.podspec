@@ -1,22 +1,19 @@
 Pod::Spec.new do |s|
 
-s.platform = :ios
-s.ios.deployment_target = '10.0'
+  s.name = 'SampleFramework'
+  s.version = '1.0.0'
+  s.license = 'MIT'
+  s.summary = 'SampleFramework description.'
+  s.homepage = 'https://github.com/tier777test/SampleFramework'
+  s.authors = 'tier777test'
+  s.source = { :git => 'https://github.com/tier777test/SampleFramework.git', :tag => s.version }
 
-s.version = "1.0.0"
+  s.ios.deployment_target = '10.0'
 
-s.name = "SampleFramework"
-s.summary = "SampleFramework description."
+  s.swift_versions = ['5.0', '5.1']
 
-s.license = 'MIT'
-s.author = "tier777test"
-s.homepage = "https://github.com/tier777test/SampleFramework"
+  s.source_files = 'SampleFramework/Source/**/*'
 
-s.source = { :git => 'https://github.com/tier777test/SampleFramework.git', :tag => s.version }
-
-s.source_files = 'Source/*.swift'
-
-s.swift_versions = ['5.0', '5.1']
+  s.frameworks = 'CFNetwork'
 
 end
-
